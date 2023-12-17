@@ -93,7 +93,7 @@ int main()
 						break;
 					}
 				}
-				if ((oper == '/' && b == 0) || (oper == '^' && b-(int)b !=0))
+				if (oper == '/' && b == 0)
 				{
 					check = true;
 					continue;

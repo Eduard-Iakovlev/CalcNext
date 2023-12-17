@@ -2,6 +2,7 @@
 #include <iostream>
 #include <Windows.h>
 #include <conio.h>
+#include <cmath>
 
 
 using std::cout;
@@ -150,21 +151,22 @@ long double fact(long double n, bool* operNum, char* oper1, char* oper)
 
 long double power(float x, float y)
 {
-    int n{ 0 };
-    const int c = 1;
-    if (y == 0) return 1;
-    else if (y - (int)y != 0)
-    {
-        cout << " вычисление дробной степени в разработке \n ";
-        return n;
-    }
-    else if (y < 0)
-    {
-        int p = y * (-1);
-        float n = x * power(x, (p - 1));
-        return c / n;
-    }
-    else return x * power(x, (y - 1));
+    //int n{ 0 };
+    //const int c = 1;
+    //if (y == 0) return 1;
+    //else if (y - (int)y != 0)
+    //{
+    //    cout << " вычисление дробной степени в разработке \n ";
+    //    return n;
+    //}
+    //else if (y < 0)
+    //{
+    //    int p = y * (-1);
+    //    float n = x * power(x, (p - 1));
+    //    return c / n;
+    //}
+    //else return x * power(x, (y - 1));
+    return pow(x, y);
 }
 
 
@@ -181,5 +183,5 @@ void begining(bool* operNum, char* oper1)
 
 void instruction()
 {
-    cout << " введите вырожение в формате a+b=(или Enter) или a! =(или Enter)\n доступные операции: '+' '-' '*' '/' '!' '^' '%' \n для выхода нажмите \"Esc\". для очистки дисплея нажмите \"пробел\"\n ";
+    cout << " введите выражение в формате a+b=(или Enter) или a! =(или Enter)\n доступные операции: '+' '-' '*' '/' '!' '^' '%' \n для выхода нажмите \"Esc\". для очистки дисплея нажмите \"пробел\"\n ";
 }
