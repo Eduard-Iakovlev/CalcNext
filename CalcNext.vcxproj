@@ -128,12 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CalcNext.cpp" />
-    <ClCompile Include="Functional.cpp" />
+    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="Data_entry.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="calculator.h" />
-    <ClInclude Include="data_entry.h" />
-    <ClInclude Include="Functional.h" />
+    <ClInclude Include="Calculator.h" />
+    <ClInclude Include="Data_entry.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
